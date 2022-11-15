@@ -1,0 +1,141 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    padding-bottom: 120px;
+}
+
+.footer__company {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__company-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: #FBD784;
+    }
+}
+
+.footer__company-description {
+    margin-top: 24px;
+    max-width: 303px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+.footer__company-copyright {
+    margin-top: auto;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.78;
+    opacity: 0.5;
+}
+
+.footer__nav {
+    display: flex;
+
+    & > * + * {
+        margin-left: 212px;
+    }
+}
+
+.footer__nav-blog {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.78;
+
+    li {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #FBD784;
+            opacity: 0;
+            transition: all 0.2s ease-in;
+        }
+
+        &:hover::after {
+            bottom: -5px;
+            opacity: 1;
+        }
+
+        &:hover {
+            color: #FBD784;
+        }
+    }
+}
+
+.title {
+    margin-bottom: 24px;
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+    color: #FBD784;
+}
+
+.footer__nav-mntn {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.78;
+
+    li {
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            display: block;
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: #FBD784;
+            opacity: 0;
+            transition: all 0.2s ease-in;
+        }
+
+        &:hover::after {
+            bottom: -5px;
+            opacity: 1;
+        }
+
+        &:hover {
+            color: #FBD784;
+        }
+    }
+}
