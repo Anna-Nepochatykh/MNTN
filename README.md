@@ -1,1 +1,1 @@
-## [MNTN](https://anna-nepochatykh.github.io/Crupto/)
+## [MNTN](https://anna-nepochatykh.github.io/MNTN/)
